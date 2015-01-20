@@ -125,7 +125,7 @@ class DataManager
                 $this->extensionGuesser->guess($mimeType)
             );
         }
-
+/*
         if (null === $binary->getMimeType()) {
             throw new \LogicException(sprintf('The mime type of image %s was not guessed.', $path));
         }
@@ -133,7 +133,7 @@ class DataManager
         if (0 !== strpos($binary->getMimeType(), 'image/')) {
             throw new \LogicException(sprintf('The mime type of image %s must be image/xxx got %s.', $path, $binary->getMimeType()));
         }
-
+*/
         return $binary;
     }
 
